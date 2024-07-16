@@ -1,0 +1,12 @@
+.btn-return {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--grey-color);
+    margin-bottom: 12px;
+}
+
+.btn-return:hover {
+    color: var(--black-color);
+}

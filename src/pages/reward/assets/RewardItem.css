@@ -1,0 +1,111 @@
+.reward {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.reward:last-child {
+    border-bottom: none;
+}
+
+.reward-image-container {
+    min-width: 180px;
+    min-height: 120px;
+}
+
+.reward-info-container {
+    flex: 1;
+}
+
+.reward-image {
+    max-width: 180px;
+    max-height: 120px;
+    margin-right: 10px;
+}
+
+.reward-info {
+    display: flex;
+    width: 100%;
+}
+
+.reward-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.icon-coin {
+    width: 22px;
+    height: 22px;
+    margin-left: 0.3rem;
+}
+
+.button-reward {
+    font-family: inherit;
+    background-color: var(--blue-color);
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 1rem;
+}
+
+.button-reward:hover {
+    background-color: var(--light-blue-2-color);
+
+}
+
+.button-reward-cancel {
+    font-family: inherit;
+    background-color: var(--white-color);
+    border: 1px solid var(--red-color);
+    padding: 7px 9px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-top: 1rem;
+    color: var(--red-color);
+}
+
+.button-reward-cancel:hover {
+    background-color: var(--red-color);
+    color: var(--white-color)
+}
+
+.button-reward.disabled {
+    background-color: var(--grey-color);
+    cursor: not-allowed;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    margin: 5px;
+}
