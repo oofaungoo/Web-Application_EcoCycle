@@ -6,8 +6,8 @@ const Form_location = ({ location, setLocation }) => {
             <div className='fs-15 fw-5 text-mint'>Location | สถานที่</div>
             <select value={location} onChange={(e) => setLocation(e.target.value)} required>
                 <option value="">เลือกสถานที่รับ</option>
-                <option value="SCIeco สาขาจีน">SCIeco สาขาจีน</option>
-                <option value="ธนาคารแห่งประเทศไทย">ธนาคารแห่งประเทศไทย</option>
+                <option value="SCIeco บางซื่อ">SCIeco บางซื่อ</option>
+                <option value="SET">SET</option>
             </select>
         </div>
     );

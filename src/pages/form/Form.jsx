@@ -6,6 +6,7 @@ import Form_fullname from './assets/Fullname';
 import ProductList from './assets/ProductList';
 import Form_condition from './assets/Condition';
 import Form_alert from './assets/Alert';
+import Form_date from './assets/Date';
 import Btnreturn from '../../components/btnreturn/Btnreturn';
 
 const Form = () => {
@@ -27,6 +28,7 @@ const Form = () => {
     const [condition, setCondition] = useState('');
     const [bank, setBank] = useState('');
     const [bankNumber, setBankNumber] = useState('');
+    const [dropOffDate, setDropOffDate] = useState('');
 
     useEffect(() => {
         setLocation(demo_user.custlocation);
@@ -65,6 +67,10 @@ const Form = () => {
         }
     };
 
+    const handleDropOffDateChange = (e) => {
+        setDropOffDate(e.target.value);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         // Handle form submission logic here
@@ -75,12 +81,13 @@ const Form = () => {
             image,
             condition,
             bank,
-            bankNumber
+            bankNumber,
+            dropOffDate
         });
     };
 
     return (
-        <form className="container">
+        <form className="container" onSubmit={handleSubmit}>
             <Btnreturn />
             <div className="text-center text-cyan fs-22 fw-5" style={{ marginBottom: "14px" }}>ทำรายการ</div>
             <Form_location location={location} setLocation={setLocation} />
@@ -99,6 +106,9 @@ const Form = () => {
                     <img src={imagePreview} alt="Preview" style={{ height: "200px", width: "250px", objectFit: "cover", marginTop: "10px" }} />
                 )}
             </div>
+
+            <Form_date value={dropOffDate} onChange={handleDropOffDateChange} />
+
             <Form_condition
                 condition={condition}
                 setCondition={setCondition}
@@ -120,7 +130,7 @@ const Form = () => {
                 </button>
             </div>
         </form>
-    )
+    );
 }
 
 export default Form;
