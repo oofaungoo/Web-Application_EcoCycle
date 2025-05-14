@@ -14,13 +14,18 @@
 
 👥 ผู้ร่วมโปรเจกต์ประกอบด้วย:
 - บอม (Atipong Rodkhow) – เสนอ requirement ที่ระบบต้องมี และเป็นผู้นำทีมในการพัฒนา
-- มาร์กกี้ (Warachphoo Suwannarong) – รับช่วงพัฒนา Back-end ต่อหลังวันที่ 16 ก.ค.
+- มาร์กกี้ (Warachphoo Suwannarong) – รับช่วงพัฒนา Back-end ต่อหลังวันที่ 16 ก.ค.2567
 
 ## 📦 Features
 This platform allows users to ♻️ sell, 🎁 donate, or 🌟 earn reward points by giving recyclable waste to SCIeco SERVICE Co., Ltd.
 
 ## 🚀 Technologies Used
 🎨 Front-end: JavaScript, HTML, CSS, React.js
+
+## ✅ Project Status
+📅 Last Updated: 14/05/2025
+
+🚀 Status: Completed
 
 ## ⚙️ How to Run the Project
 1. Clone the Repository
