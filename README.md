@@ -23,7 +23,7 @@ This platform allows users to ♻️ sell, 🎁 donate, or 🌟 earn reward poin
 🎨 Front-end: JavaScript, HTML, CSS, React.js
 
 ## ✅ Project Status
-📅 Last Updated: 14/05/2025
+📅 Last Updated: 14/05/2024
 
 🚀 Status: Completed
 
